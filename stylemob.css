@@ -29,6 +29,10 @@ h3 {
 	position: relative;
 	z-index:2;
 }
+.photo {
+    width: 100%;
+    max-width: 316px;
+}
 .menu span {
 	width: 30px;
 	height:3px;

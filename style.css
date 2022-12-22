@@ -66,7 +66,12 @@ span {
     cursor: pointer;
 }
 .photo {
+    width: 100%;
     max-width: 943px;
+}
+.prorgam {
+    width: 100%;
+    max-width: 166px;
 }
 
 .background {
