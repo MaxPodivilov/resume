@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Khula', sans-serif;
+}
+* {
+    box-sizing: border-box;
+  }
+h1,
+h2,
+h3 {
+    padding: 0px;
+    margin: 0px;
+}
+.header {
+    width: 316px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    width: 30px;
+	height: 30px;
+	position: relative;
+	z-index:2;
+}
+.menu span {
+	width: 30px;
+	height:3px;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translate(-70%, -50%);
+	background-color: #222222;
+}
+.menu span:nth-of-type(2) {
+	top: calc(50px - 6px);
+}
+.menu span:nth-of-type(3) {
+	top: calc(50px + 6px);
+}
+.name {
+    font-size: 47px;
+    line-height: 58px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 30px;
+}
+.optop {
+    font-size: 18px;
+    line-height: 22px;
+    color: #090909;
+}
+.page {
+    position:relative;
+    width: 100%;
+    background: #F6F6F6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.block {
+    max-width: 316px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.category {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.op {
+    font-size: 18px;
+    line-height: 22px;
+    color: #090909;
+    text-align: center;
+    
+}
+.block2 {
+    max-width: 316px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blockprogram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    row-gap: 40px;
+}
+.skills {
+    margin-bottom: 50px
+}
+.linkport {
+    color: #070707;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.button {
+    padding: 10px 60px;
+    border-radius: 30px;
+    background: black;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+}
+button:hover {
+    cursor: pointer;
+    background: white;
+    color: #070707;
+}
+.socialblock {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.opsocial {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+.socialelement:hover {
+    scale: 1.2;
+}
+.linkfoter {
+    text-decoration: none;
+    color: #000000;
+}
+.linkfoter:hover {
+    text-decoration: underline;
+}
