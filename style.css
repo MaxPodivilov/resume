@@ -235,3 +235,7 @@ button:hover {
 .linkfoter:hover {
     text-decoration: underline;
 }
+.link:hover {
+    color: black;
+    scale: 1.2;
+}
