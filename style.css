@@ -31,6 +31,10 @@ body {
     text-decoration: none;
     color:#828282;
 }
+.link:hover {
+    color: black;
+    scale: 1.2;
+}
 span {
     font-weight: 600;
     color: #070707;
@@ -233,8 +237,4 @@ button:hover {
 }
 .linkfoter:hover {
     text-decoration: underline;
-}
-.link:hover {
-    color: black;
-    scale: 1.2;
 }
