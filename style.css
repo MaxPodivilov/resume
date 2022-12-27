@@ -266,7 +266,3 @@ button:hover {
     margin-right: 20px;
     margin-top: 80px;
 }
-@media (.menu:hover) {
-    .menufast {
-        display: block;
-    }
