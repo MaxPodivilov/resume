@@ -276,8 +276,9 @@ h3 {
 .change {
     align-self:flex-end;
     font-size: 34px;
-    margin-right: 20px;
-    margin-top: 80px;
+    position: relative;
+    bottom: 0px;
+    right: 20px;
 }
 .menu-open {
     width: 50px;
