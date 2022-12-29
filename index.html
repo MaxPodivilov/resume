@@ -107,6 +107,20 @@
         <a href="#" class="linkfoter">LinkedIn</a>, <a href="#" class="linkfoter">Instagram</a>, <a href="#" class="linkfoter">Behance</a>, <a href="#" class="linkfoter">Dribble</a></p>
     </div>
 <script>
+let button = document.querySelector('.menu');
+let menu = document.querySelector ('.menufast');
+let menuclose = document.querySelector('.menu-open');
+
+console.log(button);
+
+button.onclick = () => { 
+    console.log('click');
+   menu.classList.add('active'); 
+} 
+menuclose.onclick = () => {
+    console.log('click');
+    menu.classList.remove('active');
+}
 
 </script>
 </body>
