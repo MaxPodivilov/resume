@@ -262,6 +262,7 @@ h3 {
 }
 .active {
     display: block;
+    overflow-y: hidden;
 }
 .menu-nav {
     display: flex;
