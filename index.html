@@ -11,27 +11,26 @@
 </head>
 <body>
     <div class="menufast">
-        <div class="menu-nav">
-            <a href="#aboutme" class="fast"><span>Home</span></a>
-            <a href="#" class="fast">About me</a>
-            <a href="#" class="fast">Skills</a>
-            <a href="#" class="fast">Portfolio</a>
-            <a href="#" class="fast">Contacts</a>
-            <div class="switch change">RU | <span>ENG</span></div>
-        </div>
-        <button class="menu-open">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <ul class="menu-nav linav">
+            <li><a href="index.html" class="fast"><span>Home</span></a></li>    
+            <li><a href="#aboutme" class="fast">About me</a></li>    
+            <li><a href="#skills" class="fast">Skills</a></li>    
+            <li><a href="#portfolio" class="fast">Portfolio</a></li>    
+            <li><a href="#contacts" class="fast">Contacts</a></li>    
+        </ul>
+    <button class="menu-close">
+        <span></span>
+        <span></span>
+    </button>
+    <div class="switch change">RU | <span>ENG</span></div>
     </div>
     <header class="headerdesc">
         <div class="nav">
-            <a href="#aboutme" class="link"><span>Home</span></a>
-            <a href="#" class="link">About me</a>
-            <a href="#" class="link">Skills</a>
-            <a href="#" class="link">Portfolio</a>
-            <a href="#" class="link">Contacts</a>
+            <a href="index.html" class="link"><span>Home</span></a>
+            <a href="#aboutme" class="link">About me</a>
+            <a href="#skills" class="link">Skills</a>
+            <a href="#portfolio" class="link">Portfolio</a>
+            <a href="#contacts" class="link">Contacts</a>
         </div>
         <hr class="stroke">
     </header>
@@ -69,7 +68,7 @@
                 with wonderful people.</p>
         </div>
     </div>
-    <div class="block2">
+    <div class="block2" id="skills">
          <h2 class="category">Skills</h2>
         <p class="op skills">I work in such programs as</p>
         <div class="blockprogram">
@@ -79,7 +78,7 @@
             <img src="assets/prog4.png" alt="" class="program">
         </div>
     </div>
-    <div class="page">
+    <div class="page" id="portfolio">
         <div class="block">
             <h2 class="category">Portfolio</h2>
             <a href="#"><img src="assets/port1.png" alt="" width="716" class="photogal"></a>
@@ -90,7 +89,7 @@
             <a class="linkport" href="#">Braun Landing Page - Concept</a>
         </div>
     </div>
-    <div class="block">
+    <div class="block" id="contacts">
         <form action="#" class="block2">
             <h2 class="category">Contacts</h2>
             <p class="op">Want to know more or just chat? You are welcome!</p>
@@ -109,16 +108,22 @@
 <script>
 let button = document.querySelector('.menu');
 let menu = document.querySelector ('.menufast');
-let menuclose = document.querySelector('.menu-open');
+let menuclose = document.querySelector('.menu-close');
+let body = document.querySelector('body');
+let nav = document.querySelector('.linav');
 
-console.log(button);
+nav.onclick = () => {
+    body.classList.remove('activebody');
+}
+
 button.onclick = () => { 
-    console.log('click');
-   menu.classList.add('active'); 
+   
+   body.classList.add('activebody'); 
 } 
 menuclose.onclick = () => {
-    console.log('click');
-    menu.classList.remove('active');
+    
+    body.classList.remove('activebody');
+
 }
 </script>
 </body>
